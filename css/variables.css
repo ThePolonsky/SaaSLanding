@@ -1,0 +1,66 @@
+/* Inter: основной текст */
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("woff2");
+}
+/*@font-face {*/
+/*    font-family: "Inter";*/
+/*    src: url("/fonts/Inter-VariableItalic.woff2") format("woff2");*/
+/*    font-weight: 100 900;*/
+/*    font-style: italic;*/
+/*    font-display: swap;*/
+/*}*/
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("/fonts/DMSans-VariableFont_opsz,wght.ttf") format("woff2");
+}
+/*@font-face {*/
+/*    font-family: "DM Sans";*/
+/*    src: url("/fonts/DM-Sans-VariableItalic.woff2") format("woff2");*/
+/*    font-weight: 200 800;*/
+/*    font-style: italic;*/
+/*    font-display: swap;*/
+/*}*/
+
+:root {
+    --font-display: "DM Sans", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    --fz-body: 16px;
+    --radius: 16px;
+    --shadow: 0 6px 20px rgba(0,0,0,.06);
+
+    --color-bg: #FFFFFF;
+    --color-surface: #FFFFFF;
+    --color-headers: #1C1F25;
+    --color-text: #4B5162;
+    --color-muted: #6B7280;
+    --color-primary: #2E71E5;
+    --color-accent:  #22C3A6;
+    --color-border:  #E5E7EB;
+    --outline-border: #1B3D75;
+}
+
+:root[data-theme="dark"] {
+    --color-bg: #171C2F;
+    --color-surface: #161a22;
+    --color-headers: #EDEEF3;
+    --color-text: #BEC2D3;
+    --color-muted: #A3A8B4;
+    --color-primary: #2E71E5;
+    --color-accent:  #41D7BD;
+    --color-border:  #4F5678;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) {
+        --color-bg: #0F1115;
+        --color-surface: #161a22;
+        --color-text: #EAEAF0;
+        --color-muted: #A3A8B4;
+        --color-primary: #8DA1FF;
+        --color-accent:  #41D7BD;
+        --color-border:  #2A2F3A;
+    }
+}

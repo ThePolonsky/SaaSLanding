@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#171C2F" media="(prefers-color-scheme: dark)">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Landing</title>
 </head>
 <body>
 <header>
-    <div class="header-top">
-
+    <div class="header-container container">
+        <nav class="header-top">
+            <div class="header-top-left">
+                <div class="language">
+                    English
+                </div>
+                <a href="#">
+                    Support
+                </a>
+            </div>
+            <div class="header-top-right">
+                <button id="themeToggle" type="button" aria-pressed="false">
+                    Dark
+                </button>
+                <a href="#">
+                    Blog
+                </a>
+                <a href="#">
+                    About Us
+                </a>
+            </div>
+        </nav>
+        <nav class="nav" aria-label="Main navigation">
+            <div class="nav-left">
+                <a id="navLogo" href="#">
+                    <img src="assets/Logo/NeurosLogo.svg" alt="Logo"></a>
+                <ul id="navMenu">
+                    <li><a href="#value">Features</a></li>
+                    <li><a href="#casestudies">Case Studies</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#applications">Applications</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <button class="btn btn-outline">Get a demo</button>
+                <button class="btn btn-primary">Start your free trial</button>
+            </div>
+        </nav>
     </div>
-    <nav class="nav container">
-        <div>
-            <a class="logo" href="#">Neuros</a>
-            <ul id="navMenu" class="nav__menu">
-                <li><a href="#value">Features</a></li>
-                <li><a href="#casestudies">Case Studies</a></li>
-                <li><a class="btn btn--primary" href="#pricing">Pricing</a></li>
-                <li><a class="btn btn--primary" href="#applications">Applications</a></li>
-            </ul>
-        </div>
-        <div>
-
-        </div>
-    </nav>
 </header>
 
 <main>
     <section class="hero">
-        <div class="hero-container">
+        <div class="hero-container container">
             <div class="hero-top">
                 <div class="hero-text">
                     <p class="hero-eyebrow">
-                        <img src="assets/Hero%20banner/AI.svg" alt="AI Icon"/>
+                        <img src="assets/Hero%20banner/AI.svg" alt="" aria-hidden="true"/>
                         Generative Business Intelligence for Analysts
                     </p>
                     <h1>
@@ -43,23 +73,23 @@
                     </p>
                 </div>
                 <div class="hero-buttons">
-                    <button>Start your free trial</button>
-                    <button>
-                        <img src="assets/Hero%20banner/L%20icon.svg" alt="L Icon"/>
+                    <button class="btn btn-primary">Start your free trial</button>
+                    <button class="btn btn-outline-neutral">
+                        <img src="assets/Hero%20banner/L%20icon.svg" alt="" aria-hidden="true"/>
                         Watch video
                     </button>
                 </div>
             </div>
             <div class="hero-content">
-
+                <img src="assets/Hero%20banner/VideoCover.svg" alt=""/>
             </div>
         </div>
     </section>
-    <section class="partners">
-        <div class="partners-container">
-            <div class="partners-top">
+    <section id="partners" class="partners">
+        <div class="partners-container container">
+            <p>
                 160,000+ customers in over 120 countries grow their businesses with Neuros
-            </div>
+            </p>
             <div class="partners-logos">
                 <img src="assets/Partner%20section/PartnerLogo1.svg" alt="PartnerLogo1"/>
                 <img src="assets/Partner%20section/PartnerLogo2.svg" alt="PartnerLogo2"/>
@@ -74,8 +104,8 @@
             </div>
         </div>
     </section>
-    <section class="value">
-        <div class="value-container">
+    <section id="value" class="value">
+        <div class="value-container container">
             <div class="value-top">
                 <h2>Key Features and Capabilities</h2>
                 <p>Specify helps you gain control of your design system across teams and products.</p>
@@ -98,7 +128,7 @@
                         <img src="assets/Value%20section/Feature1.svg" alt="Feature 1"/>
                     </div>
                 </div>
-                <div class="value-card">
+                <div class="value-card-reverse">
                     <div class="value-card-icon">
                         <img src="assets/Value%20section/Feature2.svg" alt="Feature 2"/>
                     </div>
@@ -115,34 +145,200 @@
                         </p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="testimonials">
-        <div class="testimonials-container">
-            <div class="testimonials-top">
-                <h3>
-                    The Neuros Experience
-                </h3>
-                <p>
-                    At Neuros, we pride ourselves on delivering top-notch AI-driven business analytics. But don't just
-                    take our word for it. Hear what our satisfied users have to say.
-                </p>
-            </div>
-            <div class="testimonials-content">
-                <div class="testimonials-card">
-                    <div class="testimonials-card-text">
-                        
+                <div class="value-card">
+                    <div class="value-card-text">
+                        <h3>
+                            Visualize Your Future through Intuitive Dashboards
+                        </h3>
+                        <p>
+                            Experience a seamless interaction with your predictive data through Neuros’s user-friendly
+                            dashboards. Tailor your visualizations to meet your unique analytical needs, ensuring
+                            critical insights are always accessible and actionable. With our customizable dashboards,
+                            transform complex data into clear, comprehensible visuals, enabling swift and informed
+                            decision-making at every business juncture.
+                        </p>
                     </div>
-                    <div class="testimonials-card-author">
-                        <img src="assets/Testimonial%20section/Author1.svg" alt="Author 1"/>
-                        <p>Naomi K. Johnson</p>
-                        <p>Product Manager</p>
+                    <div class="value-card-icon">
+                        <img src="assets/Value%20section/Feature3.svg" alt="Feature 3"/>
+                    </div>
+                </div>
+                <div class="value-card-reverse">
+                    <div class="value-card-icon">
+                        <img src="assets/Value%20section/Feature4.svg" alt="Feature 4"/>
+                    </div>
+                    <div class="value-card-text">
+                        <h3>
+                            Seamlessly Integrate and Synchronize Your Analytical Ecosystem
+                        </h3>
+                        <p>
+                            Neuros is not just a standalone platform but a synergistic solution designed to seamlessly
+                            integrate with your existing business tools and platforms. From CRMs to ERPs, Neuros ensures
+                            your predictive analytics are always in harmony with your operational data, providing a
+                            holistic and unified view of your business trajectory. Experience a platform that not only
+                            provides insights but also aligns with your existing technological ecosystem, ensuring
+                            consistency and reliability in your forecasting endeavors.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section id="testimonials" class="testimonials">
+        <div class="testimonials-container container">
+            <div class="testimonials-top">
+                <h2>
+                    The Neuros Experience
+                </h2>
+                <p class="testimonials-description">
+                    At Neuros, we pride ourselves on delivering top-notch AI-driven business analytics. But don't just
+                    take our word for it. Hear what our satisfied users have to say.
+                </p>
+            </div>
+            <div class="testimonials-content">
+                <div class="testimonials-card-swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonials-card swiper-slide">
+                            <div class="testimonials-card-text">
+                                Neuros's real-time data has been crucial in refining our products. Its collaborative
+                                features
+                                ensure our team is always aligned.
+                            </div>
+                            <div class="testimonials-card-bottom">
+                                <img class="testimonials-card-avatar" src="assets/Testimonial%20section/Author1.svg"
+                                     alt="Author 1"/>
+                                <div class="testimonials-card-author">
+                                    <p class="testimonials-card-name">Naomi K. Johnson</p>
+                                    <p>Product Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-card swiper-slide">
+                            <div class="testimonials-card-text">
+                                Neuros's real-time data has been crucial in refining our products. Its collaborative
+                                features
+                                ensure our team is always aligned.
+                            </div>
+                            <div class="testimonials-card-bottom">
+                                <img class="testimonials-card-avatar" src="assets/Testimonial%20section/Author1.svg"
+                                     alt="Author 1"/>
+                                <div class="testimonials-card-author">
+                                    <p class="testimonials-card-name">Naomi K. Johnson</p>
+                                    <p>Product Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-card swiper-slide">
+                            <div class="testimonials-card-text">
+                                Neuros's real-time data has been crucial in refining our products. Its collaborative
+                                features
+                                ensure our team is always aligned.
+                            </div>
+                            <div class="testimonials-card-bottom">
+                                <img class="testimonials-card-avatar" src="assets/Testimonial%20section/Author1.svg"
+                                     alt="Author 1"/>
+                                <div class="testimonials-card-author">
+                                    <p class="testimonials-card-name">Naomi K. Johnson</p>
+                                    <p>Product Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-card swiper-slide">
+                            <div class="testimonials-card-text">
+                                Neuros's real-time data has been crucial in refining our products. Its collaborative
+                                features
+                                ensure our team is always aligned.
+                            </div>
+                            <div class="testimonials-card-bottom">
+                                <img class="testimonials-card-avatar" src="assets/Testimonial%20section/Author1.svg"
+                                     alt="Author 1"/>
+                                <div class="testimonials-card-author">
+                                    <p class="testimonials-card-name">Naomi K. Johnson</p>
+                                    <p>Product Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-card swiper-slide">
+                            <div class="testimonials-card-text">
+                                Neuros's real-time data has been crucial in refining our products. Its collaborative
+                                features
+                                ensure our team is always aligned.
+                            </div>
+                            <div class="testimonials-card-bottom">
+                                <img class="testimonials-card-avatar" src="assets/Testimonial%20section/Author1.svg"
+                                     alt="Author 1"/>
+                                <div class="testimonials-card-author">
+                                    <p class="testimonials-card-name">Naomi K. Johnson</p>
+                                    <p>Product Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
+<footer>
+    <div class="footer-container container">
+        <div class="footer-top">
+            <img src="assets/Logo/NeurosLogo.svg" alt="Logo">
+            <div class="footer-divider"></div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <span>About Neuros</span>
+                <ul>
+                    <li><a href="#">Company Overview</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press & Media</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <span>Resources</span>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Webinars & Events</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <span>Support & Contact</span>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Technical Support</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Community Forum</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <span>Connect</span>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter / X</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <span>©2023 NIMBUS · All rights reserved.</span>
+            </div>
+            <ul class="footer-bottom-right">
+                <li><a href="#">Term of use</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Security</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="/js/theme.js" defer></script>
+<script src="/js/swiper.js" defer></script>
+<script src="/js/script.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
