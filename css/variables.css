@@ -1,7 +1,7 @@
 /* Inter: основной текст */
 @font-face {
     font-family: "Inter";
-    src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("woff2");
+    src: url("../fonts/Inter-VariableFont_opsz,wght.ttf") format("ttf");
 }
 /*@font-face {*/
 /*    font-family: "Inter";*/
@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: "DM Sans";
-    src: url("/fonts/DMSans-VariableFont_opsz,wght.ttf") format("woff2");
+    src: url("../fonts/DMSans-VariableFont_opsz,wght.ttf") format("ttf");
 }
 /*@font-face {*/
 /*    font-family: "DM Sans";*/
@@ -35,6 +35,7 @@
     --color-surface: #FFFFFF;
     --color-headers: #1C1F25;
     --color-text: #4B5162;
+    --color-text-neutral: #000000;
     --color-muted: #6B7280;
     --color-primary: #2E71E5;
     --color-accent:  #22C3A6;
@@ -47,6 +48,7 @@
     --color-surface: #161a22;
     --color-headers: #EDEEF3;
     --color-text: #BEC2D3;
+    --color-text-neutral: #BEC2D3;
     --color-muted: #A3A8B4;
     --color-primary: #2E71E5;
     --color-accent:  #41D7BD;
@@ -55,12 +57,14 @@
 
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme]) {
-        --color-bg: #0F1115;
+        --color-bg: #171C2F;
         --color-surface: #161a22;
-        --color-text: #EAEAF0;
+        --color-headers: #EDEEF3;
+        --color-text: #BEC2D3;
+        --color-text-neutral: #BEC2D3;
         --color-muted: #A3A8B4;
-        --color-primary: #8DA1FF;
+        --color-primary: #2E71E5;
         --color-accent:  #41D7BD;
-        --color-border:  #2A2F3A;
+        --color-border:  #4F5678;
     }
 }
