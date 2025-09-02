@@ -5,8 +5,7 @@
 }
 
 .btn {
-    display: inline-flex;
-    justify-items: center;
+    display: flex;
     align-items: center;
     padding: 12px 20px;
     border-radius: 12px;
