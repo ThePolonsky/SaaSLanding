@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     items.forEach((dd) => {
         const summary = dd.querySelector('summary');
-        const p = dd.querySelector('p');                 // <p> сразу после summary
+        const p = dd.querySelector('p');
 
         if (!summary || !p) return;
 
@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             gsap.killTweensOf(content);
-            // 0 -> реальная высота, потом фиксируем auto
             gsap.fromTo(content,
                 { height: 0, opacity: 0, y: -4 },
                 {
@@ -147,16 +146,15 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     spaceBetween: 30,
     slidesPerView: 3,
-    // centeredSlides: true,
+    centeredSlides: true,
 
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
         0:   { slidesPerView: 1 },
-        640: { slidesPerView: 2 },
-        1024:{ slidesPerView: 3 },
+        810: { slidesPerView: 2 },
+        1200:{ slidesPerView: 3 },
     }
 });
