@@ -29,10 +29,6 @@
 - [GSAP 3](https://greensock.com/gsap/) — анимации
 - [Swiper 11](https://swiperjs.com/) — слайдер отзывов
 
-## 🚀 Демо
-
-👉 [Live Demo на GitHub Pages](https://ThePolonsky.github.io/SaaSLanding/)
-
 ## 📂 Структура проекта
 
 SaaSLanding/  
