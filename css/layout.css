@@ -1006,7 +1006,11 @@
     .footer-content {
         flex-wrap: wrap;
     }
+    .footer-bottom-left {
+        font-size: 14px;
+    }
     .footer-bottom-right > * {
         text-wrap: nowrap;
+        font-size: 14px;
     }
 }
